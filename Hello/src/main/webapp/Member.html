@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<style>
+        body {
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+    </style>
+</head>
+<script type="text/javascript">
+	function checkForm(){
+		var id_c = frm.id.value.length;
+		if(frm.id.value.length<5){ //id 5글자 이상
+			alert("아이디는 5자 이상 입력해야합니다.");
+			return false;
+		}
+		var ps_c = frm.passwd.value.length;			
+		if(frm.passwd.value.length<4||frm.passwd.value.length>12){ //비밀번호 4~12글자 사이
+			alert("비밀번호는 4~12자이내로 입력 가능합니다.");
+			return false;
+		}
+		var name_c = document.frm.name.value;
+		var regExp = /^[a-z|A-Z|ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/; //이름이 숫자로 시작하면안된다
+		if(!regExp.test(name_c)){
+			alert("이름은 숫자로 시작할 수 없습니다!");
+			return false;
+		}
+		var phone1_c = document.frm.phone1.value;
+		if(phone1_c!='010'){ //전화번호 첫번째 010체크
+			alert("전화번호는 010으로 시작되어야합니다.");
+			return false;
+		}
+		return true;
+	}
+</script>
+<body>
+	<header>
+        <h1>회원가입</h1>
+    </header>
+	<form name="frm"onsubmit="return checkForm()" action="Validation.jsp" method="post">
+		<p>아 이 디 : <input type="text" name = "id">
+		<p>비밀번호 : <input type="password" name = "passwd">
+		<p>이   름 : <input type="name" name = "name">
+		<!-- 연락처 글자수 제한을 걸어서 3글자-4글자-4글자 순서-->
+		<p>연 락 처 : <input type="ph"maxlength='3' name = "phone1"style="width:40px">-<input type="ph" name = "phone2"maxlength='4'style="width:40px">-<input type="ph" name = "phone3"maxlength='4' style="width:40px">
+		<p>이 메 일 : <input type="email" name = "email">
+		<p>주   소 : <input type="address" name= "address">
+		<p><input type="submit" value="전송" onclick="checkForm()">
+	</form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<script type="text/javascript">
+	function checkForm(){
+		var uid =  document.frm.name.value;
+		session.setAttribute("id", uid);
+		}
+</script>
+
+<body>
+<form name="frm" action="main.jsp" method="post">
+		<p>아 이 디 : <input type="text" name = "id">
+		<p>비밀번호 : <input type="password" name = "passwd">
+		<p><input type="submit" value="전송" onclick="checkForm()">
+	</form>
+</body>
+</html>
