@@ -3,7 +3,7 @@
 <Resource name="jdbc/mysns_1"
 auth="Container"
 type="javax.sql.DataSource"
-driverClassName="com.mysql.jdbc.Driver"
+driverClassName="com.mysql.cj.jdbc.Driver"
 url="jdbc:mysql://localhost:3306/mysns_1"
 username="root"
 password="root"
