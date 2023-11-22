@@ -1,12 +1,13 @@
 package dao;
 
-import java.security.Timestamp;
+import java.sql.Timestamp;
 
 public class UserBean {
-	private String id;
-	private String ps;
-	private String name;
-	private Timestamp ts;
+	private String id ; 
+	private String ps ;
+	private String name ;
+	private Timestamp ts ;
+	
 	public String getId() {
 		return id;
 	}
@@ -31,4 +32,5 @@ public class UserBean {
 	public void setTs(Timestamp ts) {
 		this.ts = ts;
 	}
+	
 }
