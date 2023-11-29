@@ -1,0 +1,9 @@
+INDEX VERSION 1.4+D:\201907036_KDH\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4219279280.index
+1577033637.index
+228605898.index
+3511644310.index
+3064848582.index
+4077383582.index
+314038201.index
+2368526746.index
