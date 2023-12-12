@@ -6,7 +6,10 @@ public class UserBean {
 	private String id ; 
 	private String ps ;
 	private String name ;
+	private String address;
+	private String birth;
 	private Timestamp ts ;
+	
 	
 	public String getId() {
 		return id;
@@ -31,6 +34,18 @@ public class UserBean {
 	}
 	public void setTs(Timestamp ts) {
 		this.ts = ts;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getBirth() {
+		return birth;
+	}
+	public void setBirth(String birth) {
+		this.birth = birth;
 	}
 	
 }

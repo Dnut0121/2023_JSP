@@ -13,6 +13,13 @@
             color: #fff;
             padding: 10px;
         }
+        .button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+        }
     </style>
 </head>
 <script>
@@ -23,7 +30,7 @@
 	}
 </script>
 <body>
-	<form action="login.jsp">
+	<form action="login.jsp" method="post">
 	<table align=center>
 	<header>
         <h1 align = center>로그인</h1>
@@ -38,10 +45,10 @@
 	</tr>
 	<tr>
 		<td colspan=2 align=left height=50>
-			<input type="submit" value="로그인하기">
+			<input type="submit" value="로그인하기" class="button">
 		</td>
 		<td colspan=2 align=right height=50>
-			<input type="button" value="회원가입" onclick='return submit2(this.form);'>
+			<input type="button" value="회원가입"class="button" onclick='return submit2(this.form);'>
 		</td>
 	</tr>
 	</table>

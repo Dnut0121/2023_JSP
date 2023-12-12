@@ -1,9 +1,10 @@
 package dao;
 
 public class FeedObj {
-	private String id, content, ts, images;
+	private String no,id, content, ts, images;
 	
-	public FeedObj(String id, String content, String ts, String images) {
+	public FeedObj(String no,String id, String content, String ts, String images) {
+		this.no = no;
 		this.id = id;
 		this.content = content;
 		this.ts = ts;
@@ -14,4 +15,8 @@ public class FeedObj {
 	public String getContent() { return this.content; }
 	public String getTs() { return this.ts; }
 	public String getImages() { return this.images; }
+	public String getNo() { return this.no; }
+	public String getUserId() {
+        return this.id;
+    }
 }

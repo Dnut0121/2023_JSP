@@ -3,4 +3,5 @@
 <%
     session.invalidate();
    	out.print("로그아웃 하였습니다.");
+   	response.sendRedirect("loginForm.jsp"); // 로그인 화면으로 이동
 %>
